@@ -1,0 +1,26 @@
+<h2>Customer Details</h2>
+
+<div *ngIf="customer">
+    <table class="table table-bordered table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>ID:</th>
+                <th>First Name:</th>
+                <th>Last Name:</th>
+                <th>Email:</th>
+                <th>Address:</th>
+                <th>Mobile:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{customer.id}}</td>
+                <td>{{customer.firstName}}</td>
+                <td>{{customer.lastName}}</td>
+                <td>{{customer.email}}</td>
+                <td>{{customer.address}}</td>
+                <td>{{customer.mobile}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
